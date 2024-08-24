@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="./styles.css">
+    <title>Utsav's Calculator</title>
+</head>
+<body>
+    <div id="calculator">
+        <input id="screen" placeholder="Enter Your Sum" readonly>
+        <div id="buttons">
+            <button id="add" onclick="appendToDisplay('+')">+</button>
+            <button id="subtract" onclick="appendToDisplay('-')">&minus;</button>
+            <button id="multiply" onclick="appendToDisplay('*')">&times;</button>
+            <button id="divide" onclick="appendToDisplay('/')">&divide;</button>   
+            <button id="clear" onclick="clearDisplay()">C</button>
+            <button id="backspace" onclick="backspace()">&larr;</button>
+            <button id="seven" onclick="appendToDisplay('7')">7</button>
+            <button id="eight" onclick="appendToDisplay('8')">8</button>
+            <button id="nine" onclick="appendToDisplay('9')">9</button>
+            <button id="four" onclick="appendToDisplay('4')">4</button>
+            <button id="five" onclick="appendToDisplay('5')">5</button>
+            <button id="six" onclick="appendToDisplay('6')">6</button>
+            <button id="one" onclick="appendToDisplay('1')">1</button>
+            <button id="two" onclick="appendToDisplay('2')">2</button>
+            <button id="three" onclick="appendToDisplay('3')">3</button>
+            <button id="equals" onclick="calculate()">=</button>
+            <button id="zero" onclick="appendToDisplay('0')">0</button>
+            <button id="decimal" onclick="appendToDisplay('.')">.</button>
+        </div>
+    </div>
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
